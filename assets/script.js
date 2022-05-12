@@ -11,7 +11,7 @@
 document.getElementById("vibrateForm").addEventListener("submit", () => {
     let length = document.getElementById("vibrateLength").value;
     window.navigator.vibrate(length);
-    alert(length);
+    // alert(length);
 })
 
 // const movePrevious = () => {
