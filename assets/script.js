@@ -1,3 +1,8 @@
 document.getElementById("vibrateButton").addEventListener("click", () => {
-    window.navigator.vibrate(document.getElementById("vibrateLength").value);
+    let length = document.getElementById("vibrateLength").value;
+    window.navigator.vibrate(length);
+    document.getElementById("background").classList.add("vibrating");
+    setTimeout(() => {
+        document.getElementById("background").classList.remove("vibrating");
+    }, length)
 })
